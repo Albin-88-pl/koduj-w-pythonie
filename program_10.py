@@ -2,6 +2,7 @@ from datetime import datetime
 
 WIDTH = 1280
 HEIGHT = 640
+TITLE = "Maks - gra przygodowa"
 
 # definicje klas
 class Game:
