@@ -45,6 +45,12 @@ class Game:
         self.pocket.pos = (1000, 100)
         self.keys_in_pocket = [key_00, key_01, key_02, key_03, key_04]
 
+        # ustawienia muzyki odtwarzanej w grze
+        music.play("music-background.mp3")
+        # ustawienie głośności na 5%
+        music.set_volume(0.05)
+        self.music_play = True
+
     def draw_intro(self):
         def draw_text(text, x_offset, y_offset, fontsize=20):
             screen.draw.text(
@@ -256,12 +262,6 @@ class Game:
             quit()
 
         if self.game_start:
-
-            if keyboard.a:
-                for key in self.keys_in_pocket:
-                    key.in_pocket = True
-                self.all_keys_found = True
-                self.rooms[8].doors[1].open = True
 
             if keyboard.right:
                 self.hero_move("right")

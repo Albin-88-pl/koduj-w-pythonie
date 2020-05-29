@@ -243,12 +243,6 @@ class Game:
 
         if self.game_start:
 
-            if keyboard.a:
-                for key in self.keys_in_pocket:
-                    key.in_pocket = True
-                self.all_keys_found = True
-                self.rooms[8].doors[1].open = True
-
             if keyboard.right:
                 self.hero_move("right")
             if keyboard.left:
