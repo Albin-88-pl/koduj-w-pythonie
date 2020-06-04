@@ -47,7 +47,7 @@ class Key:
 
 class Door:
     def __init__(self, room_number, door_position, next_room_number, open):
-        """ self oznacza *siebie samego* - czyli konkretne drzwii """
+        """ self oznacza *siebie samego* - czyli konkretne drzwi """
 
         self.room_number = room_number
         # każde drzwi mają pewne wymiary (235 pixeli), więc obliczamy lewy i prawy koniec
