@@ -52,7 +52,7 @@ key_00 = Key("key-00.png", False, 11, 1025)
 key_01 = Key("key-01.png", False, 17, 80)
 key_02 = Key("key-02.png", False, 16, 850)
 key_03 = Key("key-03.png", False, 4, 950)
-key_04 = Key("key-04.png", False, 1, 950)
+key_04 = Key("key-04.png", False, 0, 370)
 
 
 # tworzymy zmienną gry
