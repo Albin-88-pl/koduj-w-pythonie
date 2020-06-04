@@ -234,8 +234,6 @@ class Game:
             self.draw_key()
             # rysujemy głównego bohatera bazując na jego danych
             self.hero.draw()
-            # wypisujemy nazwę pomieszczenia
-            screen.draw.text(self.rooms[self.actual_room].room_name, (10, 10))
 
         elif self.game_finish:
             pass
