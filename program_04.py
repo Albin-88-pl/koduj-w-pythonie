@@ -17,17 +17,14 @@ class Game:
 
     def update_game(self):
         """ ta metoda będzie wywoływana z funkcji update() programu głwnego """
-
         pass
 
     def draw_scene(self):
         """ ta metoda będzie wywoływana z funkcji draw() programu głównego """
-
         # rysujemy tło
         screen.blit(self.background_active, self.background_position)
         # rysujemy głównego bohatera bazując na jego danych
         self.hero.draw()
-
 
 
 class Key:

@@ -4,23 +4,17 @@ HEIGHT = 640
 # definicje klas
 class Game:
     def __init__(self, background_active):
-
         # ustawiamy najważniejsze elementy, niektóre na stałe
         self.background_active = background_active
         self.background_position = (0, 0)
 
-
     def update_game(self):
         """ ta metoda będzie wywoływana z funkcji update() programu głwnego """
-
         screen.blit(self.background_active, self.background_position)
-
-
 
 class Key:
     def __init__(self, key_name, in_pocket, room_number, place_on_floor):
         """ self oznacza *siebie samego* - czyli konkretny klucz """
-
         # te właściwości obiektu *self* przepisywane są z parametrów
         self.key_name = key_name
         self.in_pocket = in_pocket
@@ -29,7 +23,6 @@ class Key:
 
     # na razie nie robimy nic
     pass
-
 
 # podstawowe zmienne
 background_active = "corridor-01.jpg"
