@@ -106,7 +106,7 @@ class Game:
 
     def hero_move(self, direction):
 
-        # pobieramy flagę mówiącą o tym, w którą stronę Aleks może się przemieści
+        # pobieramy flagę mówiącą o tym, w którą stronę Maks może się przemieści
         move_flag = self.rooms[self.actual_room].can_move_lr
 
         if direction == "right":
